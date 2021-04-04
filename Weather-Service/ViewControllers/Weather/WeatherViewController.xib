@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModule="Weather_Service" customModuleProvider="target">
+            <connections>
+                <outlet property="mainTempLabel" destination="xZ0-Vq-wC3" id="r1R-zy-Ecd"/>
+                <outlet property="nameLabel" destination="TXc-zj-KVR" id="ceM-cw-3ns"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weaderIconImageView" destination="MCY-FY-NwV" id="KDJ-wI-EKl"/>
+                <outlet property="weatherDescriptionLabel" destination="9KG-9j-2Hv" id="mfL-BE-JzY"/>
+                <outlet property="weatherMainLabel" destination="BjB-Vf-639" id="824-pK-scR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherImage" translatesAutoresizingMaskIntoConstraints="NO" id="NOa-v2-Bm5">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXc-zj-KVR">
+                    <rect key="frame" x="12" y="94" width="390" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjB-Vf-639">
+                    <rect key="frame" x="207" y="104" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MCY-FY-NwV">
+                    <rect key="frame" x="47" y="104" width="320" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MCY-FY-NwV" secondAttribute="height" multiplier="2" id="iqg-5d-agh"/>
+                        <constraint firstAttribute="height" constant="160" id="pLQ-ch-X9d"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZ0-Vq-wC3">
+                    <rect key="frame" x="207" y="284" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KG-9j-2Hv">
+                    <rect key="frame" x="207" y="314" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xZ0-Vq-wC3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AW2-F5-aEc"/>
+                <constraint firstItem="9KG-9j-2Hv" firstAttribute="top" secondItem="xZ0-Vq-wC3" secondAttribute="bottom" constant="30" id="BpS-gm-SBm"/>
+                <constraint firstItem="TXc-zj-KVR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GWD-ex-3in"/>
+                <constraint firstItem="TXc-zj-KVR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="IlX-12-UFX"/>
+                <constraint firstItem="MCY-FY-NwV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="O0g-4s-vPr"/>
+                <constraint firstItem="9KG-9j-2Hv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OS5-5L-LsG"/>
+                <constraint firstItem="xZ0-Vq-wC3" firstAttribute="top" secondItem="MCY-FY-NwV" secondAttribute="bottom" constant="20" id="QWG-XX-w4v"/>
+                <constraint firstItem="NOa-v2-Bm5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RDa-mx-3kZ"/>
+                <constraint firstItem="NOa-v2-Bm5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vg6-hQ-HOI"/>
+                <constraint firstAttribute="trailing" secondItem="TXc-zj-KVR" secondAttribute="trailing" constant="12" id="Y0e-Of-aVh"/>
+                <constraint firstItem="BjB-Vf-639" firstAttribute="top" secondItem="TXc-zj-KVR" secondAttribute="bottom" constant="10" id="aiC-n9-JO4"/>
+                <constraint firstItem="TXc-zj-KVR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="hsm-pZ-RIY"/>
+                <constraint firstItem="NOa-v2-Bm5" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="l1d-Nb-O17"/>
+                <constraint firstItem="NOa-v2-Bm5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="oTs-wS-aWd"/>
+                <constraint firstItem="MCY-FY-NwV" firstAttribute="top" secondItem="BjB-Vf-639" secondAttribute="bottom" id="qOn-QW-wfc"/>
+                <constraint firstItem="BjB-Vf-639" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wf9-58-DQq"/>
+            </constraints>
+            <point key="canvasLocation" x="-7.2463768115942031" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WeatherImage" width="138" height="245.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
